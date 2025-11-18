@@ -19,4 +19,9 @@ aside {
   overflow-y: auto
 }
 
+#intro {
+  font-size: 20px;
+  color: blue;
+}
+
 
