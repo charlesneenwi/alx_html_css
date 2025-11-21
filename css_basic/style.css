@@ -2,35 +2,22 @@ body, main {
   display: flex;
 }
 
-body{
-   flex-direction: column;
+body {
+  flex-direction: column;
 }
 
 main {
   flex-direction: row;
-  flex:auto
+  flex: auto; 
 }
 article {
   flex: 2;
-  overflow-y: auto
+  overflow-y: auto; 
 }
+
 aside {
   flex: 1;
-  overflow-y: auto
+  overflow-y: auto; 
 }
 
-#intro {
-  font-size: 20px;
-  color: blue;
-}
-body {
-    background-color: #f5f5f5;
-}
 
-p {
-    color: darkblue;
-}
-
-a:hover {
-    color: gray;
-}
