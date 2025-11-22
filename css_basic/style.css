@@ -19,5 +19,32 @@ aside {
   flex: 1;
   overflow-y: auto; 
 }
+header {
+position: sticky;
+top: 0;
+background-color: #fff;
+z-index: 1000;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #0f0202;
+  color: #f01818;
+  font-size: 18px;
+  margin-top: auto;
+}
 
 
+ /* NAVIGATION LINK STYLING */
+header ul li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+header ul li a:hover {
+  color: #3498db;     /* Brighter blue on hover */
+  transform: scale(1.1);  /* Slight zoom */
+}
