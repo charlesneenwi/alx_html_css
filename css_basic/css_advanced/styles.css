@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+ 
+}
+
+/* Reset small defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Shared background for header + banner */
+.hero {
+  background-image: url("assets/hero-bg.svg");  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  color: white;
+  padding-bottom: 80px;
+  box-shadow: 0 40px 40px -20px rgba(0,0,0,0.3);
+}
+
+/* Header nav styling */
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 60;
+  font-size: 12px;
+  font-family: source sans pro, sans-serif;
+}
+
+nav a:hover {
+  opacity: 0.8;
+  color: #C271FF;
+}
+
+/* Banner (hero text) layout */
+.hero section,
+.hero > section {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 55px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-family: source sans pro, sans-serif;
+}
+
+.hero h2 {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-family: source sans pro, sans-serif;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.hero span {
+  font-size: 16px;
+  font-weight: 0;
+  margin-top: -10px;
+  letter-spacing: 3px;
+  display: inline-block;
+  font-family: source sans pro, sans-serif;
+  margin-top: 10px;
+}
+
+.hero button {
+  margin-top: 25px;
+  padding: 18px 35px;
+  font-size: 12px;
+  background-color: #C271FF;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  color: white;
+  font-weight: 120;
+  justify-content: center;
+  font-family: source sans pro, sans-serif;
+}
+
+.hero-content button {
+  display: block;
+  margin: 20px auto 0;
+}
+
+
+.hero button:hover {
+  opacity: 0.9;
+}
+
+/* Pros section layout */
+/* Parent container of the 4 cards */
+.pros-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px; /* space between cards */
+  flex-wrap: wrap; /* allow wrapping on smaller screens */
+}
+
+.hero-tags {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.hero-tags {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.pros-section {
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 60px;
+}
+
+.quote-section {
+  background-color: #C271FF;
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+  display: flex;
+}
+.quote-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.quote-container h3 {
+  margin-top: 15px;
+  font-weight: 400;
+}
+ 
+
