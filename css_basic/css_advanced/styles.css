@@ -159,6 +159,10 @@ nav a:hover {
   color: white;
   display: flex;
 }
+.quote-section h3 {
+  margin-top: 15px;
+  font-weight: 400;
+}
 .quote-container {
   max-width: 800px;
   margin: 0 auto;
@@ -169,6 +173,10 @@ nav a:hover {
 .quote-container h3 {
   margin-top: 15px;
   font-weight: 400;
+}
+
+.quote-text {
+  text-align: left;
 }
  
 
