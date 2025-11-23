@@ -236,24 +236,24 @@ nav a:hover {
   gap: 4px;            /* space between stars */
 }
 .video-block .author-info img {
-  width: 40px;   /* set the desired width */
+  width: 40px;   
   height: auto;  /* keeps the image proportionate */
   border-radius: 50%; /* optional: make it circular */
 }
 .stars i {
   color: lightgray;       /* default color for all stars */
-  margin-right: 4px;      /* spacing between stars */
+  margin-right: 4px;      
 }
 .stars i:nth-child(-n+4) {
-  color: #C271FF; /* golden color for filled stars */
+  color: #C271FF; 
 }
 .video-block .video-stats p {
-  color: #C271FF;  /* same golden color as stars */
-  margin-left: 8px; /* optional spacing from the stars */
-  font-weight: 500; /* optional, to match style */
+  color: #C271FF;  
+  margin-left: 8px; 
+  font-weight: 500; 
 }
 .most-popular .videos-container {
-  max-width: 1200px;    /* or whatever width you want */
+  max-width: 1200px;
   margin: 0 auto;        /* center horizontally */
   display: flex;         /* keep the video blocks in a row */
   gap: 20px;             /* spacing between video blocks */
