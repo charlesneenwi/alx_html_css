@@ -178,5 +178,87 @@ nav a:hover {
 .quote-text {
   text-align: left;
 }
- 
+
+.video-wrapper {
+  position: relative;       /* allows overlay positioning */
+  display: inline-block;    /* keeps the wrapper to thumbnail size */
+}
+
+.video-wrapper .play-button {
+  position: absolute;       /* overlay on top of thumbnail */
+  top: 50%;                 /* vertical center */
+  left: 50%;                /* horizontal center */
+  transform: translate(-50%, -50%); /* truly center the button */
+  width: 60px;              /* adjust size as needed */
+  height: auto;
+  pointer-events: none;     /* allows clicking the video below */
+}
+.videos-container {
+  display: flex;               /* puts child blocks in a row */
+  justify-content: center;     /* center the whole row horizontally */
+  gap: 30px;                   /* space between each video card */
+  flex-wrap: wrap;             /* allows wrapping on small screens */
+}
+
+.video-block {
+  flex: 0 0 250px;            /* each block is 250px wide */
+  display: flex;
+  flex-direction: column;     /* content inside stacks vertically */
+  align-items: flex-start;
+  gap: 10px;                  /* space between thumbnail and text */
+}
+.most-popular h2 {
+  text-align: center;
+  margin-bottom: 40px; 
+  margin-top: 40px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+.video-wrapper {
+  position: relative;
+  width: 100%;             /* makes video image fill the block width */
+}
+.video-wrapper img.play-button {
+  position: absolute;      /* center the play button on top of image */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-block .author-info,
+.video-block .video-stats {
+  display: flex;
+  align-items: center;     /* for inline items like image + name, stars + time */
+  gap: 8px;                /* spacing between inner elements */
+}
+.video-block .video-stats .stars {
+  display: flex;       /* align children in a row */
+  gap: 4px;            /* space between stars */
+}
+.video-block .author-info img {
+  width: 40px;   /* set the desired width */
+  height: auto;  /* keeps the image proportionate */
+  border-radius: 50%; /* optional: make it circular */
+}
+.stars i {
+  color: lightgray;       /* default color for all stars */
+  margin-right: 4px;      /* spacing between stars */
+}
+.stars i:nth-child(-n+4) {
+  color: #C271FF; /* golden color for filled stars */
+}
+.video-block .video-stats p {
+  color: #C271FF;  /* same golden color as stars */
+  margin-left: 8px; /* optional spacing from the stars */
+  font-weight: 500; /* optional, to match style */
+}
+.most-popular .videos-container {
+  max-width: 1200px;    /* or whatever width you want */
+  margin: 0 auto;        /* center horizontally */
+  display: flex;         /* keep the video blocks in a row */
+  gap: 20px;             /* spacing between video blocks */
+  flex-wrap: wrap;       /* wrap to next line on smaller screens */
+}
+
+
 
