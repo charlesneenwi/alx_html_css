@@ -3,6 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff; /* or your page background color */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
@@ -25,7 +32,6 @@ body {
   width: 100%;
   color: white;
   padding-bottom: 80px;
-  box-shadow: 0 40px 40px -20px rgba(0,0,0,0.3);
 }
 
 /* Header nav styling */
@@ -465,9 +471,11 @@ footer p {
     color: #777;
 }
 footer {
-  
-  padding: 40px 20px;
+  background-image:url("assets/hero-bg.svg");
+  padding: 0px 100px;
   color: white;
+  box-shadow: 0 -20px 40px -20px rgba(0,0,0,0.3);
+
 }
 
 
