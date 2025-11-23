@@ -261,4 +261,214 @@ nav a:hover {
 }
 
 
+/* Container for the whole section */
+section.free-membership {
+  max-width: 1200px;      /* control width */
+  margin: 0 auto;          /* center the section */
+  padding: 40px 20px;      /* spacing inside */
+  text-align: center;      /* centers the section heading and button */
+  margin-top: 40px;
+}
+
+/* Heading */
+section.free-membership h2 {
+  margin-bottom: 30px;
+  font-size: 1.18rem;
+
+  
+}
+
+/* Container for the 4 blocks */
+section.free-membership > div {
+  display: flex;
+  justify-content: space-between;  /* spread out blocks */
+  gap: 20px;                        /* space between each block */
+  flex-wrap: wrap;                  /* wrap on smaller screens */
+  margin-bottom: 30px;              /* spacing from the button */
+}
+
+/* Each feature block */
+section.free-membership > div > div {
+  display: flex;
+  flex-direction: column;  /* stack image, title, text */
+  align-items: flex-start;     /* align to the left */
+  padding: 20px;
+  flex: 1;                 /* each block takes equal space */
+  min-width: 200px;        /* ensures responsiveness */ /* optional: subtle background */
+  border-radius: 12px;      /* rounded corners */
+}
+
+/* Image in each block */
+section.free-membership img {
+  width: 60px;             /* smaller icon size */
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* Titles and text */
+section.free-membership h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+section.free-membership p {
+  font-size: 0.95rem;
+  color: #ffffff;
+}
+
+/* Button */
+section.free-membership button {
+  padding: 12px 30px;
+  font-size: 0.9rem;
+  background-color: #C271FF;  /* your brand color */
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+section.free-membership button:hover {
+  opacity: 0.9;
+}
+.free-membership {
+background-image: url("assets/hero-bg.svg"); 
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+width: 100%;
+color: white;
+padding-bottom: 80px;
+box-shadow: 0 40px 40px -20px rgba(0,0,0,0.3);
+}
+/* center the section title */
+.free-membership > h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* container for the 4 blocks (keeps them in a row) */
+.free-membership .features-container {
+  display: flex;
+  justify-content: space-between; /* or center */
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+/* each card: stack vertically and center contents */
+.free-membership .features-container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;    /* <-- centers elements horizontally */
+  text-align: center;     /* <-- centers multi-line text */
+  padding: 18px;
+  flex: 1 1 200px;        /* flexible width, min ~200px */
+  min-width: 200px;
+  box-sizing: border-box;
+}
+
+/* smaller icon */
+.free-membership .features-container > div img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+/* spacing for title and paragraph */
+.free-membership .features-container > div h3 {
+  margin: 8px 0;
+}
+.free-membership .features-container > div p {
+  margin: 0;
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+/* center the button under the grid */
+.free-membership > button {
+  display: inline-block;
+  margin: 20px auto 0;
+  padding: 12px 28px;
+  background: #C271FF;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+/* Section wrapper */
+.faq {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+/* Center the heading */
+.faq h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Two main columns */
+.faq-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* Each column */
+.faq-column {
+  flex: 1;
+}
+
+/* Each question+answer block */
+.faq-item {
+  margin-bottom: 30px;
+}
+
+/* Question */
+.faq-item h3 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+/* Answer */
+.faq-item p {
+  color: #555;
+  line-height: 1.5rem;
+}
+
+footer section {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer section > div {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+footer section img {
+    width: 40px;
+}
+
+footer section div i {
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #777;
+}
+footer {
+  
+  padding: 40px 20px;
+  color: white;
+}
+
+
 
