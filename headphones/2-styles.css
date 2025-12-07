@@ -1,0 +1,71 @@
+.our-results {
+    height: 120vh;
+    background: url("images/headphones_hero_2.jpg") no-repeat center center/cover;
+  
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.our-results h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.info-container p {
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+}
+
+/* CARD CONTAINER */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;   /* for screens */
+    gap: 20px;
+}
+
+.card {
+    width: 220px;
+    text-align: center;
+}
+
+.card img {
+    width: 100px;
+}
+
+.card p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .our-results h1 {
+        font-size: 1.8rem;
+    }
+
+    .info-container p {
+        font-size: 0.95rem;
+        padding: 0 10px;
+    }
+
+    .image-container {
+        gap: 15px;
+    }
+
+    .card {
+        width: 45%;    /* 2 cards per row on smaller screens */
+    }
+}
+
+@media (max-width: 380px) {
+    .card {
+        width: 100%;   /* 1 card per row on the smallest screens */
+    }
+
+    .our-results h1 {
+        font-size: 1.6rem;
+    }
+}

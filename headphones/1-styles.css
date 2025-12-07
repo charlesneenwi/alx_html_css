@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'holberton_school-icon';
+    src:  url('fonts/holberton_school-icon.eot?sq4eq4');
+    src:  url('fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
+      url('fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
+      url('fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
+      url('fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+ .what-we-do p{
+    color: black;
+    margin: 40px 20px;      /* smaller margin for responsiveness */
+    max-width: 800px;        /* limit width so text wraps nicely */
+    margin-left: auto;
+    margin-right: auto;       /* center paragraph */
+    line-height: 1.6; 
+ }
+ .what-we-do{
+    padding-bottom: 60px;
+ }
+ .what-we-do h1{
+    color: black;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+ }
+ .image-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+ }
+ .card{
+    text-align: center;
+    width: 200px;
+ }
+ .card img{
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 70px auto;
+    justify-content: center;
+    
+ }
+
+ .info-conainer{
+    padding: 0 20px;       /* small horizontal padding for small screens */
+    max-width: 100%;        /* ensure it doesn't overflow */
+    box-sizing: border-box; 
+  }
+  
+ .card p{
+    margin: 0;
+ }
+
+ @media screen and (max-width: 600px) {
+    .info-container,
+    .what-we-do p {
+        padding: 0 0px;
+        margin: 20px auto;
+    }
+  }
+  @media screen and (max-width: 300px) {
+    .info-container,
+    .what-we-do p {
+        padding: 0 0px;
+        margin: 20px auto;
+    }
+  }
+  
