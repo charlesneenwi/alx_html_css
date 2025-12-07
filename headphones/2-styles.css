@@ -1,71 +1,56 @@
 .our-results {
-    height: 120vh;
+    /* REMOVE height: 90vh */
+    min-height: 90vh;        /* allow section to expand naturally */
     background: url("images/headphones_hero_2.jpg") no-repeat center center/cover;
-  
     width: 100%;
     padding: 40px 20px;
     text-align: center;
 }
 
-.our-results h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.info-container p {
+.our-results .info-container p {
     max-width: 700px;
     margin: 0 auto 40px auto;
     line-height: 1.6;
 }
 
 /* CARD CONTAINER */
-.image-container {
+.image-containerr {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;   /* for screens */
+    flex-wrap: wrap;   /* allow proper wrapping */
     gap: 20px;
 }
 
-.card {
+/* Cards */
+.image-containerr .card {
     width: 220px;
+    position: relative;
+}
+
+.image-containerr .card img {
+    width: 100%;
+}
+
+/* TEXT ON IMAGE */
+.image-containerr .card .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
+    color: white;
+    pointer-events: none;
 }
 
-.card img {
-    width: 100px;
-}
-
-.card p {
-    margin-top: 10px;
-    font-size: 0.9rem;
-}
-
+/* RESPONSIVE FIXES */
 @media (max-width: 768px) {
-    .our-results h1 {
-        font-size: 1.8rem;
-    }
-
-    .info-container p {
-        font-size: 0.95rem;
-        padding: 0 10px;
-    }
-
-    .image-container {
-        gap: 15px;
-    }
-
-    .card {
-        width: 45%;    /* 2 cards per row on smaller screens */
+    .image-containerr .card {
+        width: 45%;  /* 2 per row */
     }
 }
 
-@media (max-width: 380px) {
-    .card {
-        width: 100%;   /* 1 card per row on the smallest screens */
-    }
-
-    .our-results h1 {
-        font-size: 1.6rem;
+@media (max-width: 480px) {
+    .image-containerr .card {
+        width: 100%; /* 1 per row */
     }
 }

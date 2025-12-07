@@ -82,6 +82,7 @@ body {
 .info-container{
   padding-left: 180px;
   padding-right: 180px;
+  margin-bottom: 80px;
 
 }
 
@@ -102,8 +103,7 @@ body {
   margin-right: 50px;
 }
 
-/* ===================== MOBILE MENU LOGIC ===================== */
-
+/* MOBILE MENU LOGIC*/
 /* Hide checkbox */
 .menu-toggle {
   display: none;
@@ -121,7 +121,7 @@ body {
   display: none;
 }
 
-/* ===================== MOBILE VIEW ===================== */
+/*MOBILE VIEW*/
 @media (max-width: 800px) {
 
   .hamburger {
