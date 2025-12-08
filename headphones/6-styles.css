@@ -1,0 +1,122 @@
+/* ---------- OUR RESULTS (replace background image with code) ---------- */
+.our-results {
+    /* remove the image-based background */
+    background: none;
+    background-color: #0f1724; 
+    color: #fff;
+    min-height: 90vh;             
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* keep the info styling local to this section */
+.our-results .info-container p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.9);
+}
+
+/* layout for the cards */
+.our-results .image-containerr {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    justify-items: center;
+    align-items: start;
+    margin-top: 10px;
+}
+
+/* card holds the pentagon + overlay text */
+.our-results .card {
+    position: relative;
+    width: 220px;               /* card box width (controls pentagon scale) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* pentagon "shape" (no image) */
+.our-results .pentagon {
+    width: 160px;              
+    height: 160px;
+    display: block;
+    /* draw a pentagon via clip-path */
+    clip-path: polygon(
+      50% 0%,
+      100% 38%,
+      82% 100%,
+      18% 100%,
+      0% 38%
+    );
+    /* gradient fill + subtle border/shadow for depth */
+    background: linear-gradient(135deg, #f33b3b 0%, #ec6868 100%);
+    box-shadow: 0 10px 20px rgba(2,6,23,0.45), inset 0 -6px 18px rgba(255,255,255,0.03);
+    border: 2px solid rgba(255,255,255,0.06);
+    transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+/* hover/tap affordance */
+.our-results .card:hover .pentagon,
+.our-results .card:focus-within .pentagon {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 20px 30px rgba(2,6,23,0.55);
+}
+
+/* hero text sits on top of pentagon (centered) */
+.our-results .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    pointer-events: none;
+}
+
+/* heading and small text on pentagon */
+.our-results .hero-text h1 {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.our-results .hero-text p {
+    font-size: 0.85rem;
+    margin: 6px 0 0;
+    color: rgba(255,255,255,0.85);
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 1024px) {
+    .our-results .image-containerr {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .our-results .card { width: 200px; }
+    .our-results .pentagon { width: 140px; height: 140px; }
+    .our-results .hero-text h1 { font-size: 1.45rem; }
+}
+
+@media (max-width: 768px) {
+    .our-results .image-containerr {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .our-results { padding: 30px 16px; }
+    .our-results .card { width: 180px; }
+    .our-results .pentagon { width: 120px; height: 120px; }
+    .our-results .hero-text h1 { font-size: 1.25rem; }
+}
+
+@media (max-width: 480px) {
+    .our-results .image-containerr {
+        grid-template-columns: 1fr;
+    }
+
+    .our-results .card { width: 100%; max-width: 320px; }
+    .our-results .pentagon { width: 180px; height: 180px; } /* scale up for single-column look */
+    .our-results .hero-text h1 { font-size: 1.8rem; }
+    .our-results .hero-text p { font-size: 0.95rem; }
+}
