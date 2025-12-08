@@ -32,6 +32,49 @@ footer {
   color: white;
   box-shadow: 0 -20px 40px -20px rgba(0,0,0,0.3);
 
+  /* ---- WHAT WE DO: CARD ANIMATION ---- */
+.what-we-do .card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.what-we-do .card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional idle animation (slow bounce) */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0); }
+}
+
+.what-we-do .card {
+    animation: float 4s ease-in-out infinite;
+}
+
+/* ---- OUR RESULTS: PENTAGON ANIMATION ---- */
+.our-results .card {
+    transition: transform 0.4s ease;
+}
+
+.our-results .card:hover {
+    transform: translateY(-12px) rotate(3deg);
+}
+
+/* Idle breathing animation */
+@keyframes pulseItem {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.06); }
+    100% { transform: scale(1); }
+}
+
+.our-results .pentagon {
+    animation: pulseItem 3.5s ease-in-out infinite;
+}
+
+
+
 }
 @media (min-width: 600px) {
     footer > section > div {
